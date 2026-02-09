@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>hello world</h1>
+  <h2 id="heading-tag">Hello AddEventLister</h2>
+  <p id="para">Lorem ipsum dolor sit amet.</p>
+  <button id="change-text">Click Me</button>
+  <button id="make-green">Make Green</button>
+  <button id="for-alert">For Alert</button>
+  <input id="input-field" type="text" placeholder="Write Some Text">
+  <button id="for-update">Click for update</button>
+  <script>
+  const notification =  document.getElementById('for-alert')
+  notification.addEventListener('click', function makealert(){
+    alert('Hello')
+  });
+  const moke = document.getElementById('make-green')
+  moke.addEventListener('click', function(){
+    document.body.style.fontSize = '100px'
+  })
+  document.getElementById('change-text').addEventListener('click', function(){
+  const changetext = document.getElementById('heading-tag')
+  changetext.innerText = 'ami change hoye gesi'
+  })
+  document.getElementById('for-update').addEventListener('click', function(){
+    const inputField = document.getElementById('input-field')
+    const int = inputField.value
+    const para = document.getElementById('para')
+    para.innerText = int
+    inputField.value = ''
+  })
+  </script>
+</body>
+</html>

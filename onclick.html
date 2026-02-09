@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="paraTag"></p>
+  <h2 id="heading2"></h2>
+  <button onclick="console.log('hello I am event')">Click Me...</button>
+  <button onclick="alert(' I am alert')">Click Me here</button>
+  <button onclick="document.write('hello i am new')">Another btn</button>
+  <button onclick="something()">Another button</button>
+  <button onclick="someOne()">button</button>
+  <button onclick="forDate()">What is Date</button>
+  <h1 id="alert" onclick="alert()">This is heading 1</h1>
+  <script>
+    //alert('Hello I am alert')
+    function something(){
+      document.write('Hello I am New')
+    }
+    function someOne(){
+    const heading2 =  document.getElementById('heading2')
+    heading2.innerText= 'This is heading2'
+    }
+    function forDate(){
+      const forDate = document.getElementById('paraTag')
+      paraTag.innerText = Date()
+    }
+    function alert(){
+      const alert = document.getElementById(alert)
+      alert.innerText = Towfiqul Islam
+    }
+  </script>
+</body>
+</html>

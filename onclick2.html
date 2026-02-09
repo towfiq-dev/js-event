@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="document.body.style.backgroundColor = 'red' ">MakeRed</button>
+  <button onclick="colors()">MakeBlue</button>
+  <button id="yellos">Makeyello</button>
+  <script>
+    const colors = () => {
+      document.body.style.backgroundColor = 'blue'
+    }
+    const yello = document.getElementById('yellos')
+    yello.onclick = yellows
+    
+    function yellows(){
+      document.body.style.backgroundColor = 'yellow'
+    }
+  </script>
+</body>
+</html>
