@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="para">Loading...</p>
+  <input type="text" placeholder="Write your input" id="input-field">
+  <button id="btn-update">Update</button>
+
+  <script>
+  document.getElementById('btn-update')
+  .addEventListener('click', function(){
+    const inputText = document.getElementById('input-field')
+    const newValue = inputText.value
+    const paragraph = document.getElementById('para')
+    const newText = paragraph.innerText = newValue
+    console.log(newText);
+    
+    
+    
+    
+  })
+  </script>
+</body>
+</html>

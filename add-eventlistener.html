@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="make-btn">Towfiqul Islam</button>
+  <h1 id="title-text">Lorem ipsum dolor sit amet.</h1>
+  <button id="btn-update-title">Saiful Islam</button>
+  <p id="para">no user...</p>
+  <button id="user-log-in">Log In</button>
+  <br><br><br>
+  <p id="ptag">loading</p>
+  <input id="input-field" type="text" placeholder="Write your input">
+  <button id="update-btn">Update</button>
+  <script>
+  document.getElementById('update-btn')
+  .addEventListener('click', function(){
+    const values = document.getElementById('input-field')
+    const news = values.value
+    const pnew = document.getElementById('ptag')
+    pnew.innerText = news
+
+    
+    
+    
+    
+  })
+
+
+
+    document.getElementById('user-log-in')
+    .addEventListener('click', function(){
+     const paragraph = document.getElementById('para')
+    paragraph.innerText = 'My name is Towfiqul Islam'
+    })
+
+  document.getElementById('make-btn')
+  .addEventListener('click', function(){
+    document.body.style.backgroundColor = 'blue'
+    
+  })
+
+  document.getElementById('btn-update-title')
+  .addEventListener('click', function(){
+  const pageTitleElement = document.getElementById('title-text')
+  console.log(pageTitleElement);
+  pageTitleElement.innerText = 'I am Changed'
+  
+  })
+  </script>
+</body>
+</html>
